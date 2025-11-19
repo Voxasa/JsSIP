@@ -10,7 +10,8 @@ export { C, Exceptions, Grammar, Utils };
 export {UA} from './UA'
 export {URI} from './URI'
 export {NameAddrHeader} from './NameAddrHeader'
-export {WebSocketInterface, Socket, WeightedSocket} from './WebSocketInterface'
+export {WebSocketInterface} from './WebSocketInterface'
+export {Socket, WeightedSocket} from './Socket'
 
 export const name: string
 export const version: string
@@ -18,6 +19,6 @@ export const version: string
  * @deprecated debug should not be used, use Logger instead
  */
 export const debug: {
-    enable: (...namespaces?:string)=> void
+    enable: (namespaces: string)=> void
     disable: ()=> void
 }
