@@ -1,5 +1,3 @@
-import { Debug } from 'debug';
-
 import * as C from './Constants';
 import * as Exceptions from './Exceptions';
 import * as Grammar from './Grammar';
@@ -12,7 +10,14 @@ export { URI } from './URI';
 export { NameAddrHeader } from './NameAddrHeader';
 export { WebSocketInterface } from './WebSocketInterface';
 export { Socket, WeightedSocket } from './Socket';
+export { Logger } from './Logger';
 
-export const debug: Debug;
+/**
+ * @deprecated debug should not be used, use Logger instead.
+ */
+export const debug: {
+	enable: (namespaces: string) => void;
+	disable: () => void;
+};
 export const name: string;
 export const version: string;
