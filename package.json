@@ -38,6 +38,7 @@
 		"test": "node npm-scripts.mjs test",
 		"coverage": "node npm-scripts.mjs coverage",
 		"build": "node npm-scripts.mjs build",
+		"prepare": "node npm-scripts.mjs typescript:build",
 		"typescript:build": "node npm-scripts.mjs typescript:build",
 		"release": "node npm-scripts.mjs release",
 		"docs": "node npm-scripts.mjs docs",
